@@ -28,9 +28,9 @@ else {
     function luasPersegipanjang();
 }
 function luasPersegipanjang (){
-    var panjang = prompt('masukan panjang : ');
-    var lebar = prompt('masukan lebar : ');
-    var persegi = panjang * lebar;
+    const panjang = prompt('masukan panjang : ');
+    const lebar = prompt('masukan lebar : ');
+    const persegi = panjang * lebar;
     return persegi;
 }
 
