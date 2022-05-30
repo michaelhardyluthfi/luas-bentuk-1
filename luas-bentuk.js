@@ -12,21 +12,17 @@ dengan minimal perorang 1 commit
 pilih seorang untuk membuat repository*/
 let luasbentuk = require("luas-bentuk");
 var namaBangun = prompt('pilih jenis bangun : ');
-if (namaBangun=="luasPersegi"){ 
-    function luasPersegi();
+
+switch(namaBangun){
+    case "luasPersegi":
+        function luasPersegi();
+        break;
+    case "luasLingkaran": 
+        function luasLingkaran();
+        break;
 }
-else if (namaBangun=="luasLingkaran"){
-    function luasLingkaran();
-}
-else if (namaBangun=="luasSegitiga"){
-    function luasSegitiga();
-}
-else if (namaBangun=="luasJajargenjang"){
-    function luasJajargenjang();
-}
-else {
-    function luasPersegipanjang();
-}
+
+
 function luasPersegipanjang (){
     const panjang = prompt('masukan panjang : ');
     const lebar = prompt('masukan lebar : ');
